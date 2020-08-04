@@ -1,0 +1,8 @@
+package cashee_money_helper;
+
+public class principal {
+	
+	main
+	System.out.println("Seja-bem vindo ao Cashee, seu organizador de gastos pessoais, mantenha tudo anotado e continue a economizar");
+	
+}

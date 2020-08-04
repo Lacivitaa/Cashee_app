@@ -1,0 +1,8 @@
+package cashee_money_helper;
+
+public class Principal {
+	public static void main(String[] args) {
+		Funcionalidades func = new Funcionalidades();
+		func.menuPrincipal();
+	}	
+}

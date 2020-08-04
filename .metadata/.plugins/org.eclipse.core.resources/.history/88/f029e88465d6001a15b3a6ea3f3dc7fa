@@ -1,0 +1,9 @@
+package cashee_money_helper;
+
+import java.util.Scanner;
+
+public class principal {
+	public static void main(String[] args) {
+		Funcionalidades func = new Funcionalidades();
+	}	
+}
