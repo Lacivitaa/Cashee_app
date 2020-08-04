@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Capa" title="#Capa" src="https://github.com/Lacivitaa/Cashee_AdmMoney/blob/master/cashee.png" />
+    <img alt="Capa" title="#Capa" src="https://github.com/Lacivitaa/Cashee_app/blob/master/cashee.png" />
 </h1>
 
 ## ☄️ Sobre o programa:
