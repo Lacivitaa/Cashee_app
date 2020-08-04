@@ -2,7 +2,7 @@
     <img alt="Capa" title="#Capa" src="https://github.com/Lacivitaa/Cashee_app/blob/master/cashee.png" />
 </h1>
 
-## ☄️ Sobre o programa:
+## 💵 Sobre o programa:
 - Desenvolvido na IDE [Eclipse](https://www.eclipse.org/)
 - Responsável por:
   - Gerenciar os gastos do usuário
