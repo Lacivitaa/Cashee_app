@@ -1,0 +1,104 @@
+package cashee_money_helper;
+
+import java.awt.event.KeyEvent;
+import java.util.Scanner;
+
+public class Funcionalidades {
+
+	Scanner sc = new Scanner(System.in);
+
+	// Método responsável por inicializar o menu.
+	public int menuPrincipal() {
+		int resp = 0;
+		while (resp > 3 || resp < 1) {
+			System.out.println(
+					"===========================================================================================================");
+			System.out.println(
+					"Seja-bem vindo ao Cashee, seu organizador de gastos pessoais, mantenha tudo anotado e continue a economizar");
+			System.out.println(
+					"===========================================================================================================");
+			System.out.println("Menu de opções:");
+			System.out.println("1 - Adicionar gastos");
+			System.out.println("2 - Visualizar gastos");
+			System.out.println("3 - Fechar");
+			System.out.print("Sua escolha: ");
+			resp = sc.nextInt();
+			System.out.println(
+					"====================================== Versão 0.1 (Alpha) =================================================");
+		}
+		return resp;
+	}
+
+	// Método responsável por direcionar ao menu de "adicionar gastos".
+	public int menuAdicionar() {
+		int resp = 0;
+		while (resp > 3 || resp < 1) {
+			System.out.println(
+					"===========================================================================================================");
+			System.out.println("Qual o tipo de gasto a ser adicionado ?");
+			System.out.println(
+					"===========================================================================================================");
+			System.out.println("Menu de opções:");
+			System.out.println("1 - Gasto mensal/Parcelado");
+			System.out.println("2 - Gasto único");
+			System.out.println("3 - Voltar");
+			System.out.print("Sua escolha: ");
+			resp = sc.nextInt();
+			switch (resp) {
+			case 1:
+				menuGastoMes();
+			case 2:
+				menuGastoUnico();
+			case 3:
+				menuPrincipal();
+			}
+		}
+		return resp;
+	}
+
+	// Método responsável por adicionar um gasto parcelado.
+	public void menuGastoMes() {
+		double valor;
+		int meses;
+		System.out.println(
+				"===========================================================================================================");
+		System.out.println("Qual o valor das parcelas ?");
+		System.out.print("Valor: ");
+		valor = sc.nextDouble();
+		System.out.println(
+				"===========================================================================================================");
+		System.out.println("Qual a quantidade de meses ?");
+		System.out.print("Quantidade de meses: ");
+		meses = sc.nextInt();
+		// Teste provisório
+		System.out.println("Valor total: " + meses * valor);
+		menuAdicionar();
+	}
+
+	// Método responsável por adicionar um gasto único.
+	public void menuGastoUnico() {
+		double valor;
+		System.out.println(
+				"===========================================================================================================");
+		System.out.println("Qual o valor a ser adicionado ?");
+		System.out.print("Valor: ");
+		valor = sc.nextDouble();
+		// Teste provisório
+		System.out.println("Valor adicionado: " + valor);
+		menuAdicionar();
+	}
+
+	// Método responsável por mostrar todos os gastos do usuário.
+	public void menuVisualizar() {
+		KeyEvent e = null;
+		int key = e.getKeyCode();
+		if (e.isControlDown()) {
+			while (key != KeyEvent.VK_ENTER) {
+				System.out.println("===========================================================================================================");
+				System.out.println("Valores ainda não adicionados");
+				System.out.println("===========================================================================================================");
+			}
+		}
+		menuPricipal()
+	}
+}

@@ -1,0 +1,6 @@
+package cashee_money_helper;
+
+public class GastoMes extends Gasto {
+	String exp;
+	int qntdmes;
+}

@@ -1,16 +1,14 @@
 package cashee_money_helper;
 
 public class Gasto {
-	int id;
-	String desc;
-	double valor;
+	private String desc;
+	private double valor;
 	
-	public int getId() {
-		return id;
+	public Gasto(String desc, double valor) {
+		this.valor = valor;
+		this.desc = desc;
 	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 	public String getDesc() {
 		return desc;
 	}

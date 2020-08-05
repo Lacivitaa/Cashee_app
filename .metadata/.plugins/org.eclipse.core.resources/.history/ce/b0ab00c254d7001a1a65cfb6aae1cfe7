@@ -1,0 +1,15 @@
+package cashee_money_helper;
+
+public class Principal {
+	public static void main(String[] args) {
+		Funcionalidades func = new Funcionalidades();
+		switch (func.menuPrincipal()) {
+		case 1:
+			func.menuAdicionar();
+		case 2:
+			
+		case 3:
+			System.exit(0);
+		}
+	}
+}
