@@ -1,0 +1,5 @@
+Valor: 500.0|Descrição: Agua
+Valor: 972.0|Descrição: Alura
+Valor: 350.0|Descrição: Gasolina
+Valor: 972.0|Descrição: Alura
+Valor: 200.0|Descrição: Gasolina
